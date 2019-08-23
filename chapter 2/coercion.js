@@ -40,3 +40,28 @@ false
 
 // any other value of any other type are truthy!
 // this includes things like functions
+
+
+// weirdness around === and == operators...
+// === compared the value AND type
+// == just compares the value but attempts to coerce the values by making the type the same
+// this however can have bad knock on effects
+
+// true
+console.log(0 == []);
+// false
+console.log('0' == []);
+// true
+console.log(0 == '0');
+// true
+console.log(false == '0');
+// false
+console.log(false == 'false');
+// true
+console.log(false == 0);
+
+
+
+arr = [1,2,3];
+arr2 = [...arr];
+console.log('arrays: ', arr2 == arr);
