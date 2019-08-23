@@ -19,3 +19,5 @@ console.log(typeof example3);
 var example4 = undefined;
 console.log(typeof example4);
 
+
+console.log('test');
