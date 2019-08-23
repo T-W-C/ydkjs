@@ -80,3 +80,27 @@ var NotAnonymousFunction = function boo() {
 
 
 NotAnonymousFunction();
+
+
+
+// immediately invoking a function:
+
+// immediately invoked function expression
+
+// outer brackets needed around the function
+// followed by the (...) after it to execute it
+(function IIFE(name) {
+    console.log("Hello", name);
+})("Tom");
+
+// they can be utilised in variable delcaration:
+var x = (function() { return 5; })();
+
+console.log(x);
+
+var y = (function foo() { return 10; })();
+console.log(y);
+
+var z = (() => { return 1; })();
+console.log(z);
+

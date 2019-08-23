@@ -21,3 +21,4 @@ console.log(typeof example4);
 
 
 console.log('test');
+
